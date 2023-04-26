@@ -9,7 +9,7 @@ basic.forever(function () {
                 music.playMelody("A F E F D G E F ", 199)
             } else {
                 basic.showIcon(IconNames.No)
-                music.ringTone(147)
+                music.playTone(147, music.beat(BeatFraction.Whole))
             }
         }
     }
