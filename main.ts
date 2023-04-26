@@ -6,8 +6,10 @@ basic.forever(function () {
         if (huskylens.isAppear_s(HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
             if (huskylens.isAppear(1, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
                 basic.showIcon(IconNames.Yes)
+                music.playMelody("A F E F D G E F ", 199)
             } else {
                 basic.showIcon(IconNames.No)
+                music.ringTone(147)
             }
         }
     }
